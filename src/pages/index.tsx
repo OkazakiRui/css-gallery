@@ -8,10 +8,10 @@ const Home: NextPage = () => {
       <Head>
         <title>css gallery</title>
       </Head>
-      <h3>作品集</h3>
+      <h3>練習</h3>
       <ul>
         <li>
-          <Link href="/">hoge</Link>
+          <Link href="/easing">easing</Link>
         </li>
       </ul>
     </>
