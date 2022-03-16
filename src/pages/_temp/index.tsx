@@ -9,7 +9,9 @@ const index: NextPage = () => {
         <title>hoge</title>
       </Head>
       <div className={s.wrap}>
-        <p>hoge</p>
+        {[...Array(3)].map((_, index) => (
+          <div key={index} className={s.wrap} />
+        ))}
       </div>
     </>
   );
