@@ -29,7 +29,7 @@
   animation: show-bar 1s ease-in-out 0s forwards;
 }
 .bar:nth-child(6) {
-  animation: show-bar 1s cubic-bezier(0.87, -0.01, 0.1, 0.99) 0s forwards; /*** ここが重要 ***/
+  animation: show-bar 1s cubic-bezier(1, 0, 0, 0.99) 0s forwards;
 }
 
 @keyframes show-bar {
