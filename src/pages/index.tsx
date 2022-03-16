@@ -22,6 +22,9 @@ const Home: NextPage = () => {
         <li>
           <Link href="/three_square2">three_square2</Link>
         </li>
+        <li>
+          <Link href="/square_block">square_block</Link>
+        </li>
       </ul>
     </>
   );

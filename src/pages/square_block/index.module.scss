@@ -1,0 +1,85 @@
+@import 'styles/keyframes';
+@import 'styles/mixin';
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include pc-layout {
+    flex-wrap: wrap;
+  }
+  @include sp-layout {
+    flex-direction: column;
+  }
+}
+
+.effect {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: #ce9740;
+    transform: scale(0);
+  }
+
+  @include pc-layout {
+    width: 30vw;
+    height: 30vw;
+  }
+  @include sp-layout {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  &:nth-child(1) {
+    span:nth-child(1) {
+      // 2 alternate で scale(0) → scale(1) → scale(0) となる
+      animation: scale0-1 0.3s ease 0.1s 2 alternate forwards;
+    }
+    span:nth-child(2) {
+      animation: scale0-1 0.3s ease 0.2s 2 alternate forwards;
+    }
+    span:nth-child(3) {
+      animation: scale0-1 0.3s ease 0.3s 2 alternate forwards;
+    }
+    span:nth-child(4) {
+      animation: scale0-1 0.3s ease 0.4s 2 alternate forwards;
+    }
+  }
+  &:nth-child(2) {
+    span:nth-child(1) {
+      animation: scale0-1 0.3s ease 0.4s 2 alternate forwards;
+    }
+    span:nth-child(2) {
+      animation: scale0-1 0.3s ease 0.5s 2 alternate forwards;
+    }
+    span:nth-child(3) {
+      animation: scale0-1 0.3s ease 0.6s 2 alternate forwards;
+    }
+    span:nth-child(4) {
+      animation: scale0-1 0.3s ease 0.7s 2 alternate forwards;
+    }
+  }
+  &:nth-child(3) {
+    span:nth-child(1) {
+      animation: scale0-1 0.3s ease 0.7s 2 alternate forwards;
+    }
+    span:nth-child(2) {
+      animation: scale0-1 0.3s ease 0.8s 2 alternate forwards;
+    }
+    span:nth-child(3) {
+      animation: scale0-1 0.3s ease 0.9s 2 alternate forwards;
+    }
+    span:nth-child(4) {
+      animation: scale0-1 0.3s ease 1s 2 alternate forwards;
+    }
+  }
+}
