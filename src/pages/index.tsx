@@ -30,8 +30,8 @@ const Home: NextPage = () => {
       <h3>screenTransitionAnimation</h3>
       <ul>
         <li>
-          <Link href="/screen_transition_animation/square_block">
-            square_block
+          <Link href="/screen_transition_animation/four_square">
+            four_square
           </Link>
         </li>
       </ul>
