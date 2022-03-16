@@ -16,6 +16,9 @@ const Home: NextPage = () => {
         <li>
           <Link href="/three_scales">three_scales</Link>
         </li>
+        <li>
+          <Link href="/three_square">three_square</Link>
+        </li>
       </ul>
     </>
   );
