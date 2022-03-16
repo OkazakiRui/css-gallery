@@ -8,22 +8,31 @@ const Home: NextPage = () => {
       <Head>
         <title>css gallery</title>
       </Head>
-      <h3>練習</h3>
+      <h2>practice</h2>
+      <h3>shapeAnimation</h3>
       <ul>
         <li>
-          <Link href="/easing">easing</Link>
+          <Link href="/shape_animation/easing">easing</Link>
         </li>
         <li>
-          <Link href="/three_scales">three_scales</Link>
+          <Link href="/shape_animation/three_scales">three_scales</Link>
         </li>
         <li>
-          <Link href="/three_square">three_square</Link>
+          <Link href="/shape_animation/three_square">three_square</Link>
         </li>
         <li>
-          <Link href="/three_square2">three_square2</Link>
+          <Link href="/shape_animation/three_square2">three_square2</Link>
         </li>
         <li>
-          <Link href="/square_block">square_block</Link>
+          <Link href="/shape_animation/square_block">square_block</Link>
+        </li>
+      </ul>
+      <h3>screenTransitionAnimation</h3>
+      <ul>
+        <li>
+          <Link href="/screen_transition_animation/square_block">
+            square_block
+          </Link>
         </li>
       </ul>
     </>
