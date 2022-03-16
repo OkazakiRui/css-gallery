@@ -6,7 +6,7 @@ const index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>hoge</title>
+        <title>three_square</title>
       </Head>
       <div className={s.wrap}>
         {[...Array(3)].map((_, index) => (
