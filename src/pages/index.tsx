@@ -22,6 +22,10 @@ const Home: NextPage = () => {
       <ul>
         <LinkItem genre="screen_transition_animation" pageName="four_square" />
         <LinkItem genre="screen_transition_animation" pageName="three_arrow" />
+        <LinkItem
+          genre="screen_transition_animation"
+          pageName="slide_sway_below"
+        />
       </ul>
     </>
   );
