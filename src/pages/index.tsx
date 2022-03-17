@@ -34,6 +34,9 @@ const Home: NextPage = () => {
         <LinkItem genre="char_animation" pageName="fullname2">
           岡崎流依2
         </LinkItem>
+        <LinkItem genre="char_animation" pageName="fullname3">
+          岡崎流依3
+        </LinkItem>
       </ul>
     </>
   );
