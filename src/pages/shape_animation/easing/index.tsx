@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import s from './index.module.scss';
+import { Wrap, Bar } from './style';
 
 const index: NextPage = () => {
   return (
@@ -8,11 +8,11 @@ const index: NextPage = () => {
       <Head>
         <title>easing</title>
       </Head>
-      <div className={s.wrap}>
+      <Wrap>
         {[...Array(6)].map((_, i) => (
-          <div key={i} className={s.bar}></div>
+          <Bar key={i} />
         ))}
-      </div>
+      </Wrap>
     </>
   );
 };
