@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <h3>shapeAnimation</h3>
       <ul>
         <LinkItem genre="shape_animation" pageName="easing" />
-        <LinkItem genre="shape_animation" pageName="three_scales" />
+        <LinkItem genre="shape_animation" pageName="three_circle" />
         <LinkItem genre="shape_animation" pageName="three_square" />
         <LinkItem genre="shape_animation" pageName="three_square2" />
         <LinkItem genre="shape_animation" pageName="square_block" />

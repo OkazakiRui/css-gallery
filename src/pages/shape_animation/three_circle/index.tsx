@@ -1,18 +1,18 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import s from './index.module.scss';
+import { Wrap, Effect } from './style';
 
 const index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>three_scales</title>
+        <title>three_circle</title>
       </Head>
-      <div className={s.wrap}>
+      <Wrap>
         {[...Array(3)].map((_, i) => (
-          <div key={i} className={s.effect} />
+          <Effect key={i} num={i} />
         ))}
-      </div>
+      </Wrap>
     </>
   );
 };

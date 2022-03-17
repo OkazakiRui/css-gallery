@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import s from './index.module.scss';
+import { Effect, Wrap } from './style';
 
 const index: NextPage = () => {
   return (
@@ -8,11 +8,11 @@ const index: NextPage = () => {
       <Head>
         <title>three_square2</title>
       </Head>
-      <div className={s.wrap}>
+      <Wrap>
         {[...Array(3)].map((_, index) => (
-          <div key={index} className={s.effect} />
+          <Effect key={index} num={index} />
         ))}
-      </div>
+      </Wrap>
     </>
   );
 };

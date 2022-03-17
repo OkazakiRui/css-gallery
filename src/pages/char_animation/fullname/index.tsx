@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import s from './index.module.scss';
+import { Char, Word, Wrap, CharItem, CharParts } from './style';
 
 const index: NextPage = () => {
   return (
@@ -8,21 +8,21 @@ const index: NextPage = () => {
       <Head>
         <title>岡崎流依</title>
       </Head>
-      <div className={s.wrap}>
-        <div className={s.word}>
-          {[...Array(4)].map((_, index) => (
-            <div className={s.char} key={index}>
-              {[...Array(2)].map((_, index) => (
-                <div key={index}>
-                  {[...Array(4)].map((_, index) => (
-                    <span key={index} />
+      <Wrap>
+        <Word>
+          {[...Array(4)].map((_, cNum) => (
+            <Char key={cNum}>
+              {[...Array(2)].map((_, dNum) => (
+                <CharItem key={dNum}>
+                  {[...Array(4)].map((_, sNum) => (
+                    <CharParts key={sNum} cNum={cNum} dNum={dNum} sNum={sNum} />
                   ))}
-                </div>
+                </CharItem>
               ))}
-            </div>
+            </Char>
           ))}
-        </div>
-      </div>
+        </Word>
+      </Wrap>
     </>
   );
 };

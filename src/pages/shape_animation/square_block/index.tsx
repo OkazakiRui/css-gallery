@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import s from './index.module.scss';
+import { Effect, Item, Wrap } from './style';
 
 const index: NextPage = () => {
   return (
@@ -8,15 +8,15 @@ const index: NextPage = () => {
       <Head>
         <title>square_block</title>
       </Head>
-      <div className={s.wrap}>
-        {[...Array(3)].map((_, index) => (
-          <div key={index} className={s.effect}>
-            {[...Array(4)].map((_, index) => (
-              <span key={index} />
+      <Wrap>
+        {[...Array(3)].map((_, eNum) => (
+          <Effect key={eNum}>
+            {[...Array(4)].map((_, sNum) => (
+              <Item key={sNum} eNum={eNum} sNum={sNum} />
             ))}
-          </div>
+          </Effect>
         ))}
-      </div>
+      </Wrap>
     </>
   );
 };
