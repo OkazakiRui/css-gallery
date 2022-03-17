@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import Head from 'next/head';
+import LinkItem from 'components/LinkItem';
 
 const Home: NextPage = () => {
   return (
@@ -11,34 +12,16 @@ const Home: NextPage = () => {
       <h2>practice</h2>
       <h3>shapeAnimation</h3>
       <ul>
-        <li>
-          <Link href="/shape_animation/easing">easing</Link>
-        </li>
-        <li>
-          <Link href="/shape_animation/three_scales">three_scales</Link>
-        </li>
-        <li>
-          <Link href="/shape_animation/three_square">three_square</Link>
-        </li>
-        <li>
-          <Link href="/shape_animation/three_square2">three_square2</Link>
-        </li>
-        <li>
-          <Link href="/shape_animation/square_block">square_block</Link>
-        </li>
+        <LinkItem genre="shape_animation" pageName="easing" />
+        <LinkItem genre="shape_animation" pageName="three_scales" />
+        <LinkItem genre="shape_animation" pageName="three_square" />
+        <LinkItem genre="shape_animation" pageName="three_square2" />
+        <LinkItem genre="shape_animation" pageName="square_block" />
       </ul>
       <h3>screenTransitionAnimation</h3>
       <ul>
-        <li>
-          <Link href="/screen_transition_animation/four_square">
-            four_square
-          </Link>
-        </li>
-        <li>
-          <Link href="/screen_transition_animation/three_arrow">
-            three_arrow
-          </Link>
-        </li>
+        <LinkItem genre="screen_transition_animation" pageName="four_square" />
+        <LinkItem genre="screen_transition_animation" pageName="three_arrow" />
       </ul>
     </>
   );
