@@ -36,7 +36,7 @@
     background-image: url('./svg/i.svg');
   }
   &:first-child {
-    margin-top: none;
+    margin-top: 0;
   }
 
   &:nth-child(1) {
