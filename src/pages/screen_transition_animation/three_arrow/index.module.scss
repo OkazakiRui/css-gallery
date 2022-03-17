@@ -42,7 +42,7 @@
         border-bottom-color: #283c5f;
       }
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       background-color: #fff;
       &::after {
         border-bottom-color: #fff;
@@ -58,7 +58,7 @@
     &:nth-child(3) {
       animation: show 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.4s forwards;
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       animation: show 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.6s forwards;
     }
   }
