@@ -34,6 +34,11 @@ const Home: NextPage = () => {
             four_square
           </Link>
         </li>
+        <li>
+          <Link href="/screen_transition_animation/three_arrow">
+            three_arrow
+          </Link>
+        </li>
       </ul>
     </>
   );
