@@ -27,6 +27,12 @@ const Home: NextPage = () => {
           pageName="slide_sway_below"
         />
       </ul>
+      <h3>charAnimation</h3>
+      <ul>
+        <LinkItem genre="char_animation" pageName="fullname">
+          岡崎流依
+        </LinkItem>
+      </ul>
     </>
   );
 };
