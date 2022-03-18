@@ -38,6 +38,12 @@ const Home: NextPage = () => {
           岡崎流依3
         </LinkItem>
       </ul>
+      <h3>loadingAnimation</h3>
+      <ul>
+        <LinkItem genre="loading_animation" pageName="2circles_fuwafuwa">
+          2circles_fuwafuwa
+        </LinkItem>
+      </ul>
     </>
   );
 };
