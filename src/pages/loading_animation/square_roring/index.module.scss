@@ -1,0 +1,66 @@
+@import 'styles/keyframes';
+@import 'styles/tailwindColors';
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: $cyan-500;
+
+  span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: $cyan-50;
+      border-radius: 3px;
+      animation: animate 0.6s linear infinite;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: black;
+      opacity: 0.2;
+      position: absolute;
+      bottom: -14px;
+      border-radius: 50%;
+      animation: shadow 0.6s linear infinite;
+    }
+  }
+}
+@keyframes shadow {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+
+@keyframes animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    transfrom: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+  75% {
+    transfrom: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}

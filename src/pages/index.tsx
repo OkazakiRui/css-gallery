@@ -43,6 +43,9 @@ const Home: NextPage = () => {
         <LinkItem genre="loading_animation" pageName="2circles_fuwafuwa">
           2circles_fuwafuwa
         </LinkItem>
+        <LinkItem genre="loading_animation" pageName="square_roring">
+          square_roring
+        </LinkItem>
       </ul>
     </>
   );
