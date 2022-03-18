@@ -37,6 +37,9 @@ const Home: NextPage = () => {
         <LinkItem genre="char_animation" pageName="fullname3">
           岡崎流依3
         </LinkItem>
+        <LinkItem genre="char_animation" pageName="paka">
+          paka
+        </LinkItem>
       </ul>
       <h3>loadingAnimation</h3>
       <ul>
