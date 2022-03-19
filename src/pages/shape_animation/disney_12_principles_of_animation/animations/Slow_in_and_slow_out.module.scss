@@ -1,0 +1,30 @@
+@import 'styles/tailwindColors';
+.wrap {
+  span {
+    display: block;
+    box-sizing: content-box;
+    background: $teal-500;
+    border: 1rem solid #fff;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: calc(50% - 2rem);
+    animation: one 3s infinite cubic-bezier(0.5, 0, 0.5, 1);
+  }
+}
+
+@keyframes one {
+  0%,
+  5% {
+    transform: translate(-12em);
+  }
+  45%,
+  55% {
+    transform: translate(12em);
+  }
+  95%,
+  100% {
+    transform: translate(-12em);
+  }
+}

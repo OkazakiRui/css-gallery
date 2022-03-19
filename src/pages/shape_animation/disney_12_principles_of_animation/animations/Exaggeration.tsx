@@ -4,7 +4,6 @@ const Exaggeration: VFC = () => {
   return (
     <div className={s.wrap}>
       <span />
-      <span />
     </div>
   );
 };

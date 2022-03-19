@@ -4,7 +4,6 @@ const Arc: VFC = () => {
   return (
     <div className={s.wrap}>
       <span />
-      <span />
     </div>
   );
 };

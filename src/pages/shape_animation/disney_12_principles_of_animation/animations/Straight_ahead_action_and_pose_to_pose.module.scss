@@ -1,0 +1,46 @@
+@import 'styles/tailwindColors';
+.wrap {
+  span {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    background: $teal-500;
+    border: 1rem solid #fff;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: calc(50% - 2rem);
+
+    &:nth-child(1) {
+      left: calc(50% - 8em);
+      animation: one 6s infinite cubic-bezier(0.57, -0.5, 0.43, 1.53);
+    }
+    &:nth-child(2) {
+      left: calc(50% + 8em);
+      animation: one 6s infinite steps(1);
+    }
+  }
+}
+
+@keyframes one {
+  0%,
+  10% {
+    transform: none;
+  }
+  26%,
+  30% {
+    transform: rotateZ(-45deg) scale(1.25);
+  }
+  40% {
+    transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+  }
+  50%,
+  75% {
+    transform: rotateZ(-45deg) scale(1.1);
+  }
+  90%,
+  100% {
+    transform: none;
+  }
+}

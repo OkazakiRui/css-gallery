@@ -4,7 +4,6 @@ const Slow_in_and_slow_out: VFC = () => {
   return (
     <div className={s.wrap}>
       <span />
-      <span />
     </div>
   );
 };

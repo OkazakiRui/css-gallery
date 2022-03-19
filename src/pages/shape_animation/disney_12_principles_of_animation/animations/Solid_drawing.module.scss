@@ -1,0 +1,63 @@
+@import 'styles/tailwindColors';
+.wrap {
+  background: none;
+  border: none;
+  perspective: 400px;
+  perspective-origin: center;
+  div {
+    animation: one 4s infinite cubic-bezier(0.6, -0.44, 0.37, 1.44);
+    transform-style: preserve-3d;
+  }
+  span {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    background: $teal-500;
+    border: 1rem solid #fff;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: calc(50% - 2rem);
+
+    &:nth-child(1) {
+      transform: translateZ(3em);
+    }
+    &:nth-child(2) {
+      transform: translateZ(-3em);
+    }
+    &:nth-child(3) {
+      transform: rotateY(-90deg) translateZ(-3em);
+    }
+    &:nth-child(4) {
+      transform: rotateY(-90deg) translateZ(3em);
+    }
+    &:nth-child(5) {
+      transform: rotateX(-90deg) translateZ(-3em);
+    }
+    &:nth-child(6) {
+      transform: rotateX(-90deg) translateZ(3em);
+    }
+  }
+}
+
+@keyframes one {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  40% {
+    transform: none;
+    opacity: 1;
+  }
+  60%,
+  75% {
+    transform: rotateX(-20deg) rotateY(-45deg) translateY(4em);
+    animation-timing-function: cubic-bezier(1, -0.05, 0.43, -0.16);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(-180em) translateX(20em);
+    opacity: 0;
+  }
+}

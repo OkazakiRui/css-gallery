@@ -3,8 +3,12 @@ import s from './Appeal.module.scss';
 const Appeal: VFC = () => {
   return (
     <div className={s.wrap}>
-      <span />
-      <span />
+      <div>
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
     </div>
   );
 };

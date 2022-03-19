@@ -1,2 +1,61 @@
+@import 'styles/tailwindColors';
 .wrap {
+  span {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+
+    &:nth-child(1) {
+      background: $teal-500;
+      border: 1rem solid #fff;
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: calc(50% - 2rem);
+      left: calc(50% - 2rem);
+      animation: one 4s infinite ease-out;
+    }
+    &:nth-child(2) {
+      background: $fuchsia-900;
+      height: 12rem;
+      width: 1rem;
+      position: absolute;
+      top: calc(50% - 5rem);
+      left: calc(50% + 12rem);
+    }
+  }
+}
+
+@keyframes one {
+  0%,
+  10% {
+    opacity: 0;
+  }
+  10%,
+  20% {
+    transform: none;
+    animation-timing-function: cubic-bezier(1, -1.92, 0.95, 0.89);
+    width: 4rem;
+    height: 4rem;
+    top: calc(50% - 2rem);
+    left: calc(50% - 2rem);
+    opacity: 1;
+  }
+  30%,
+  40% {
+    transform: translateX(8rem);
+    height: 6rem;
+    width: 4rem;
+    top: calc(50% - 3rem);
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  70%,
+  100% {
+    transform: translateX(8rem) translateY(5rem);
+    height: 6rem;
+    width: 4rem;
+    top: calc(50% - 3rem);
+    opacity: 0;
+  }
 }

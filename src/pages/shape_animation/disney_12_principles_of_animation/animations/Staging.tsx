@@ -5,6 +5,7 @@ const Staging: VFC = () => {
     <div className={s.wrap}>
       <span />
       <span />
+      <span />
     </div>
   );
 };

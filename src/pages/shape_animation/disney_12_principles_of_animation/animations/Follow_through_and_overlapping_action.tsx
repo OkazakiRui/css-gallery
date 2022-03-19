@@ -4,7 +4,6 @@ const Follow_through_and_overlapping_action: VFC = () => {
   return (
     <div className={s.wrap}>
       <span />
-      <span />
     </div>
   );
 };

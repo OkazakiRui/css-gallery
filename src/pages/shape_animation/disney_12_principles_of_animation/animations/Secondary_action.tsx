@@ -5,6 +5,7 @@ const Secondary_action: VFC = () => {
     <div className={s.wrap}>
       <span />
       <span />
+      <span />
     </div>
   );
 };
