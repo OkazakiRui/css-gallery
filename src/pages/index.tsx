@@ -16,12 +16,6 @@ const Home: NextPage = () => {
         <LinkItem genre="shape_animation" pageName="three_square" />
         <LinkItem genre="shape_animation" pageName="three_square2" />
         <LinkItem genre="shape_animation" pageName="square_block" />
-        <LinkItem
-          genre="shape_animation"
-          pageName="disney_12_principles_of_animation"
-        >
-          アニメーション12の基本原則
-        </LinkItem>
         <LinkItem genre="shape_animation" pageName="traffic_lights">
           信号機
         </LinkItem>
@@ -47,19 +41,27 @@ const Home: NextPage = () => {
           岡崎流依3
         </LinkItem>
         <LinkItem genre="char_animation" pageName="paka">
-          paka
+          ぼとん！くる！ぱか！
         </LinkItem>
       </ul>
       <h3>loadingAnimation</h3>
       <ul>
-        <LinkItem genre="loading_animation" pageName="2circles_fuwafuwa">
-          2circles_fuwafuwa
-        </LinkItem>
-        <LinkItem genre="loading_animation" pageName="square_roring">
-          square_roring
-        </LinkItem>
+        <LinkItem genre="loading_animation" pageName="2circles_fuwafuwa" />
+        <LinkItem genre="loading_animation" pageName="square_roring" />
         <LinkItem genre="loading_animation" pageName="ripple">
           波紋
+        </LinkItem>
+      </ul>
+      <h3>technique</h3>
+      <ul>
+        <LinkItem
+          genre="technique"
+          pageName="disney_12_principles_of_animation"
+        >
+          アニメーション12の基本原則
+        </LinkItem>
+        <LinkItem genre="technique" pageName="motion_blur">
+          モーションブラー
         </LinkItem>
       </ul>
     </>
