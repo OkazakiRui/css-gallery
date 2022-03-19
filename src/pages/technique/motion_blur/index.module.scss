@@ -33,7 +33,7 @@
     opacity: 0.1;
     display: block;
     background-color: black;
-    transform: translateX(-125px);
+    transform: translateX(-125px) rotate(0deg);
     transition: all 0.75s cubic-bezier(0.34, -0.66, 0.63, 1.73) 0ms;
 
     @for $var from 1 through 20 {
