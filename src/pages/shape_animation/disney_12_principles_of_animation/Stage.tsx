@@ -1,5 +1,4 @@
 import { useState, VFC } from 'react';
-import { text } from 'stream/consumers';
 import s from './index.module.scss';
 
 type Props = {
