@@ -22,6 +22,9 @@ const Home: NextPage = () => {
         >
           アニメーション12の基本原則
         </LinkItem>
+        <LinkItem genre="shape_animation" pageName="traffic_lights">
+          信号機
+        </LinkItem>
       </ul>
       <h3>screenTransitionAnimation</h3>
       <ul>
