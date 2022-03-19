@@ -1,0 +1,50 @@
+@import 'styles/keyframes';
+@import 'styles/tailwindColors';
+
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $rose-900;
+}
+.contents {
+  background-color: white;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 200px);
+  border: double 10px $rose-900;
+  cursor: pointer;
+
+  h3 {
+    text-align: center;
+    line-height: 50px;
+  }
+
+  span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    opacity: 0.1;
+    display: block;
+    background-color: black;
+    transform: translateX(-125px);
+    transition: all 0.75s cubic-bezier(0.34, -0.66, 0.63, 1.73) 0ms;
+
+    @for $var from 1 through 20 {
+      &:nth-child(#{$var}) {
+        transition-delay: calc($var * 3ms);
+      }
+    }
+  }
+  &:hover span {
+    transform: translateX(125px) rotate(360deg);
+    border-radius: 0;
+    background-color: $blue-500;
+  }
+}
