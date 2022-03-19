@@ -9,7 +9,7 @@ const index: NextPage = () => {
         <title>untitled</title>
       </Head>
       <div className={s.stage}>
-        <span />
+        <div className={s.contents}></div>
       </div>
     </>
   );
