@@ -55,6 +55,9 @@ const Home: NextPage = () => {
         <LinkItem genre="loading_animation" pageName="square_roring">
           square_roring
         </LinkItem>
+        <LinkItem genre="loading_animation" pageName="ripple">
+          波紋
+        </LinkItem>
       </ul>
     </>
   );
