@@ -16,6 +16,12 @@ const Home: NextPage = () => {
         <LinkItem genre="shape_animation" pageName="three_square" />
         <LinkItem genre="shape_animation" pageName="three_square2" />
         <LinkItem genre="shape_animation" pageName="square_block" />
+        <LinkItem
+          genre="shape_animation"
+          pageName="disney_12_principles_of_animation"
+        >
+          アニメーション12の基本原則
+        </LinkItem>
       </ul>
       <h3>screenTransitionAnimation</h3>
       <ul>
