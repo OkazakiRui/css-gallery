@@ -64,6 +64,12 @@ const Home: NextPage = () => {
           モーションブラー
         </LinkItem>
       </ul>
+      <h3>モーション周期表</h3>
+      <ul>
+        <LinkItem genre="motion_periodic_table" pageName="orbit">
+          軌道回転
+        </LinkItem>
+      </ul>
     </>
   );
 };
