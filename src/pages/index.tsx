@@ -69,6 +69,9 @@ const Home: NextPage = () => {
         <LinkItem genre="motion_periodic_table" pageName="orbit">
           軌道回転
         </LinkItem>
+        <LinkItem genre="motion_periodic_table" pageName="fractal_noise">
+          フラクタルノイズ
+        </LinkItem>
       </ul>
     </>
   );
